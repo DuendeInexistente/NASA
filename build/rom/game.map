@@ -29,7 +29,7 @@ AREA .  .ABS.
 		l__CODE	201C
 		s__HOME	221C
 		s__BASE	252E
-		l__CODE_6	25F1
+		l__CODE_6	26BB
 		s__LIT	275E
 		s__GSINIT	275E
 		l__CODE_3	29BC
@@ -389,7 +389,7 @@ AREA _DATA
 		_menu_layout	C4A1
 		_text_lines	C4A2
 		_tmp_text_lines	C4F2
-		_music_e87afa160_Data	C542
+		_music_e6137a4b0_Data	C542
 		_fade_running	C558
 		gbt_playing	C55F
 		gbt_song	C560
@@ -515,13 +515,13 @@ AREA _CODE_5
 		_background_bank_ptrs	4003
 		_sprite_bank_ptrs	4009
 		_scene_bank_ptrs	401E
-		_string_bank_ptrs	4024
+		_string_bank_ptrs	4027
 		_avatar_bank_ptrs	402A
 		_music_banks	402D
 AREA _CODE_6
 	RADIX HEX
 	BASE 4000
-	SIZE 25F1
+	SIZE 26BB
 	ATTRIB REL CON
 	GLOBALS
 		_bank_6_data	4000
@@ -647,12 +647,12 @@ AREA _CODE_7
 	SIZE 0701
 	ATTRIB REL CON
 	GLOBALS
-		_music_e87afa1600	4000
-		_music_e87afa1601	4116
-		_music_e87afa1602	4229
-		_music_e87afa1603	4357
-		_music_e87afa1604	4481
-		_music_e87afa1605	45D1
+		_music_e6137a4b00	4000
+		_music_e6137a4b01	4116
+		_music_e6137a4b02	4229
+		_music_e6137a4b03	4357
+		_music_e6137a4b04	4481
+		_music_e6137a4b05	45D1
 AREA _CODE_1
 	RADIX HEX
 	BASE 4000
@@ -669,39 +669,39 @@ MODULES
 	FILE /tmp/_gbs/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE obj/Scene_b.o
-		NAME lcc255630
+		NAME lcc224650
 	FILE obj/data/data_ptrs.o
-		NAME lcc255690
+		NAME lcc224690
 	FILE obj/data/bank_6.o
-		NAME lcc255730
+		NAME lcc224730
 	FILE obj/Scene.o
-		NAME lcc255770
+		NAME lcc224770
 	FILE obj/ScriptRunner_b.o
-		NAME lcc255810
+		NAME lcc224810
 	FILE obj/MusicManager.o
-		NAME lcc255850
+		NAME lcc224850
 	FILE obj/game.o
-		NAME lcc255890
+		NAME lcc224890
 	FILE obj/BankManager.o
-		NAME lcc255930
+		NAME lcc224930
 	FILE obj/SpriteHelpers.o
-		NAME lcc255970
+		NAME lcc224970
 	FILE obj/UI_b.o
-		NAME lcc256010
+		NAME lcc225010
 	FILE obj/ScriptRunner.o
-		NAME lcc256050
+		NAME lcc225050
 	FILE obj/UI.o
-		NAME lcc256090
+		NAME lcc225100
 	FILE obj/BankData.o
-		NAME lcc256130
+		NAME lcc225140
 	FILE obj/Math.o
-		NAME lcc256170
+		NAME lcc225180
 	FILE obj/Stack.o
-		NAME lcc256210
-	FILE obj/music/music_e87afa160.o
-		NAME lcc256250
+		NAME lcc225220
+	FILE obj/music/music_e6137a4b0.o
+		NAME lcc225260
 	FILE obj/FadeManager.o
-		NAME lcc256290
+		NAME lcc225300
 	FILE obj/gbt_player.o
 	FILE obj/gbt_player_bank1.o
 LIBRARIES

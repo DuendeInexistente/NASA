@@ -321,7 +321,7 @@
 00:C4A1 _menu_layout
 00:C4A2 _text_lines
 00:C4F2 _tmp_text_lines
-00:C542 _music_e87afa160_Data
+00:C542 _music_e6137a4b0_Data
 00:C558 _fade_running
 00:C55F gbt_playing
 00:C560 gbt_song
@@ -411,7 +411,7 @@
 01:4003 _background_bank_ptrs
 01:4009 _sprite_bank_ptrs
 01:401E _scene_bank_ptrs
-01:4024 _string_bank_ptrs
+01:4027 _string_bank_ptrs
 01:402A _avatar_bank_ptrs
 01:402D _music_banks
 ; Area: _CODE_6
@@ -528,12 +528,12 @@
 01:704E _UIDrawDialogueFrame_b
 01:7061 _UISetColor_b
 ; Area: _CODE_7
-01:4000 _music_e87afa1600
-01:4116 _music_e87afa1601
-01:4229 _music_e87afa1602
-01:4357 _music_e87afa1603
-01:4481 _music_e87afa1604
-01:45D1 _music_e87afa1605
+01:4000 _music_e6137a4b00
+01:4116 _music_e6137a4b01
+01:4229 _music_e6137a4b02
+01:4357 _music_e6137a4b03
+01:4481 _music_e6137a4b04
+01:45D1 _music_e6137a4b05
 ; Area: _CODE_1
 01:412C gbt_channel_1_handle
 01:4283 gbt_channel_2_handle
