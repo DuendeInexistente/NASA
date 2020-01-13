@@ -389,7 +389,7 @@ AREA _DATA
 		_menu_layout	C4A1
 		_text_lines	C4A2
 		_tmp_text_lines	C4F2
-		_music_e6137a4b0_Data	C542
+		_music_ee78f7050_Data	C542
 		_fade_running	C558
 		gbt_playing	C55F
 		gbt_song	C560
@@ -647,12 +647,12 @@ AREA _CODE_7
 	SIZE 0701
 	ATTRIB REL CON
 	GLOBALS
-		_music_e6137a4b00	4000
-		_music_e6137a4b01	4116
-		_music_e6137a4b02	4229
-		_music_e6137a4b03	4357
-		_music_e6137a4b04	4481
-		_music_e6137a4b05	45D1
+		_music_ee78f70500	4000
+		_music_ee78f70501	4116
+		_music_ee78f70502	4229
+		_music_ee78f70503	4357
+		_music_ee78f70504	4481
+		_music_ee78f70505	45D1
 AREA _CODE_1
 	RADIX HEX
 	BASE 4000
@@ -669,39 +669,39 @@ MODULES
 	FILE /tmp/_gbs/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE obj/Scene_b.o
-		NAME lcc224650
+		NAME lcc277410
 	FILE obj/data/data_ptrs.o
-		NAME lcc224690
+		NAME lcc277450
 	FILE obj/data/bank_6.o
-		NAME lcc224730
+		NAME lcc277490
 	FILE obj/Scene.o
-		NAME lcc224770
+		NAME lcc277530
 	FILE obj/ScriptRunner_b.o
-		NAME lcc224810
+		NAME lcc277570
 	FILE obj/MusicManager.o
-		NAME lcc224850
+		NAME lcc277610
 	FILE obj/game.o
-		NAME lcc224890
+		NAME lcc277650
 	FILE obj/BankManager.o
-		NAME lcc224930
+		NAME lcc277690
 	FILE obj/SpriteHelpers.o
-		NAME lcc224970
+		NAME lcc277730
 	FILE obj/UI_b.o
-		NAME lcc225010
+		NAME lcc277770
 	FILE obj/ScriptRunner.o
-		NAME lcc225050
+		NAME lcc277810
 	FILE obj/UI.o
-		NAME lcc225100
+		NAME lcc277850
 	FILE obj/BankData.o
-		NAME lcc225140
+		NAME lcc277890
 	FILE obj/Math.o
-		NAME lcc225180
+		NAME lcc277930
 	FILE obj/Stack.o
-		NAME lcc225220
-	FILE obj/music/music_e6137a4b0.o
-		NAME lcc225260
+		NAME lcc277970
+	FILE obj/music/music_ee78f7050.o
+		NAME lcc278010
 	FILE obj/FadeManager.o
-		NAME lcc225300
+		NAME lcc278050
 	FILE obj/gbt_player.o
 	FILE obj/gbt_player_bank1.o
 LIBRARIES
