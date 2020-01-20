@@ -17,22 +17,21 @@ AREA .  .ABS.
 		l__LIT	0000
 		l__GSINITTAIL	0001
 		l__BSS	005E
-		l__CODE_5	0108
 		l__CODE_9	010C
 		l__CODE_11	010E
 		l__CODE_12	011B
+		l__CODE_5	0165
 		l__HEADER	01E1
 		s__CODE	0200
 		l__BASE	0230
 		l__HOME	0312
-		l__DATA	056C
+		l__DATA	0571
 		l__CODE_1	0671
 		l__CODE_8	0701
 		l__GSINIT	0974
 		l__CODE_10	119C
 		l__CODE	201C
 		s__HOME	221C
-		l__CODE_7	24CC
 		s__BASE	252E
 		s__LIT	275E
 		s__GSINIT	275E
@@ -40,7 +39,8 @@ AREA .  .ABS.
 		l__CODE_4	30A6
 		s__GSINITTAIL	30D2
 		s__GSFINAL	30D3
-		l__CODE_6	3F40
+		l__CODE_7	332F
+		l__CODE_6	3FC4
 		s__CODE_10	4000
 		s__CODE_11	4000
 		s__CODE_12	4000
@@ -54,12 +54,12 @@ AREA .  .ABS.
 		s__CODE_9	4000
 		.OAM	C000
 		s__DATA	C0A0
-		s__BSS	C60C
-		s__HEAP	C66A
-		s__BSEG	C66A
-		s__ISEG	C66A
-		s__XSEG	C66A
-		s__OVERLAY	C66A
+		s__BSS	C611
+		s__HEAP	C66F
+		s__BSEG	C66F
+		s__ISEG	C66F
+		s__XSEG	C66F
+		s__OVERLAY	C66F
 		.STACK	E000
 		.refresh_OAM	FF80
 AREA _CODE
@@ -291,7 +291,7 @@ AREA _GSFINAL
 AREA _DATA
 	RADIX HEX
 	BASE C0A0
-	SIZE 056C
+	SIZE 0571
 	ATTRIB REL CON
 	GLOBALS
 		_scene_bank	C0A0
@@ -318,162 +318,162 @@ AREA _DATA
 		_bank_data_ptrs	C144
 		_music_tracks	C154
 		_script_variables	C160
-		_map_next_pos	C177
-		_map_next_dir	C179
-		_map_next_sprite	C17B
-		_actors	C17C
-		_triggers	C279
-		_scene_index	C2D3
-		_scene_next_index	C2D5
-		_await_input	C2D7
-		_camera_dest	C2D8
-		_camera_settings	C2DA
-		_camera_speed	C2DB
-		_wait_time	C2DC
-		_shake_time	C2DD
-		_scene_width	C2DE
-		_scene_height	C2DF
-		_input_script_ptrs	C2E0
-		_timer_script_duration	C2F8
-		_timer_script_time	C2F9
-		_timer_script_ptr	C2FA
-		_scroll_x	C2FD
-		_scroll_y	C2FE
-		_scriptrunner_bank	C2FF
-		_RAMPtr	C300
-		_current_index	C302
-		_joy	C303
-		_prev_joy	C304
-		_time	C305
-		_rand_seed	C306
-		_actor_move_settings	C308
-		_actor_move_dest	C309
-		_stage_type	C30B
-		_stage_next_type	C30C
-		_script_continue	C30D
-		_script_action_complete	C30E
-		_script_actor	C30F
-		_scene_stack_ptr	C310
-		_scene_stack	C311
-		_bank_stack	C341
-		_ui_bank	C34C
-		_ptr_div_reg	C34D
-		_script_ptr_bank	C34F
-		_script_ptr	C350
-		_script_ptr_x	C352
-		_script_ptr_y	C354
-		_script_start_ptr	C356
-		_script_cmd_args	C358
-		_script_cmd_args_len	C35E
-		_last_fn	C35F
-		_script_stack_ptr	C361
-		_script_stack	C362
-		_script_bank_stack	C372
-		_script_start_stack	C37A
-		_script_cmds	C38A
-		_win_pos_x	C4A4
-		_win_pos_y	C4A5
-		_win_dest_pos_x	C4A6
-		_win_dest_pos_y	C4A7
-		_win_speed	C4A8
-		_text_x	C4A9
-		_text_y	C4AA
-		_text_drawn	C4AB
-		_text_count	C4AC
-		_text_tile_count	C4AD
-		_text_wait	C4AE
-		_text_in_speed	C4AF
-		_text_out_speed	C4B0
-		_text_draw_speed	C4B1
-		_tmp_text_in_speed	C4B2
-		_tmp_text_out_speed	C4B3
-		_tmp_text_draw_speed	C4B4
-		_text_num_lines	C4B5
-		_avatar_enabled	C4B6
-		_menu_enabled	C4B7
-		_menu_index	C4B8
-		_menu_flag	C4B9
-		_menu_num_options	C4BB
-		_menu_cancel_on_last_option	C4BC
-		_menu_cancel_on_b	C4BD
-		_menu_layout	C4BE
-		_text_lines	C4BF
-		_tmp_text_lines	C50F
-		_music_43566df84_Data	C55F
-		_music_7d8485893_Data	C563
-		_music_a2b597361_Data	C567
-		_music_056e8bac2_Data	C56B
-		_music_0bb9bba60_Data	C5AF
-		_fade_running	C5C5
-		gbt_playing	C5CC
-		gbt_song	C5CD
-		gbt_bank	C5CF
-		gbt_speed	C5D0
-		gbt_temp_play_data	C5D1
-		gbt_loop_enabled	C5DD
-		gbt_ticks_elapsed	C5DE
-		gbt_current_step	C5DF
-		gbt_current_pattern	C5E0
-		gbt_current_step_data_ptr	C5E1
-		gbt_channels_enabled	C5E3
-		gbt_pan	C5E4
-		gbt_vol	C5E8
-		gbt_instr	C5EC
-		gbt_freq	C5F0
-		gbt_channel3_loaded_instrument	C5F6
-		gbt_arpeggio_freq_index	C5F7
-		gbt_arpeggio_enabled	C600
-		gbt_arpeggio_tick	C603
-		gbt_cut_note_tick	C606
-		gbt_have_to_stop_next_step	C60A
-		gbt_update_pattern_pointers	C60B
+		_map_next_pos	C17C
+		_map_next_dir	C17E
+		_map_next_sprite	C180
+		_actors	C181
+		_triggers	C27E
+		_scene_index	C2D8
+		_scene_next_index	C2DA
+		_await_input	C2DC
+		_camera_dest	C2DD
+		_camera_settings	C2DF
+		_camera_speed	C2E0
+		_wait_time	C2E1
+		_shake_time	C2E2
+		_scene_width	C2E3
+		_scene_height	C2E4
+		_input_script_ptrs	C2E5
+		_timer_script_duration	C2FD
+		_timer_script_time	C2FE
+		_timer_script_ptr	C2FF
+		_scroll_x	C302
+		_scroll_y	C303
+		_scriptrunner_bank	C304
+		_RAMPtr	C305
+		_current_index	C307
+		_joy	C308
+		_prev_joy	C309
+		_time	C30A
+		_rand_seed	C30B
+		_actor_move_settings	C30D
+		_actor_move_dest	C30E
+		_stage_type	C310
+		_stage_next_type	C311
+		_script_continue	C312
+		_script_action_complete	C313
+		_script_actor	C314
+		_scene_stack_ptr	C315
+		_scene_stack	C316
+		_bank_stack	C346
+		_ui_bank	C351
+		_ptr_div_reg	C352
+		_script_ptr_bank	C354
+		_script_ptr	C355
+		_script_ptr_x	C357
+		_script_ptr_y	C359
+		_script_start_ptr	C35B
+		_script_cmd_args	C35D
+		_script_cmd_args_len	C363
+		_last_fn	C364
+		_script_stack_ptr	C366
+		_script_stack	C367
+		_script_bank_stack	C377
+		_script_start_stack	C37F
+		_script_cmds	C38F
+		_win_pos_x	C4A9
+		_win_pos_y	C4AA
+		_win_dest_pos_x	C4AB
+		_win_dest_pos_y	C4AC
+		_win_speed	C4AD
+		_text_x	C4AE
+		_text_y	C4AF
+		_text_drawn	C4B0
+		_text_count	C4B1
+		_text_tile_count	C4B2
+		_text_wait	C4B3
+		_text_in_speed	C4B4
+		_text_out_speed	C4B5
+		_text_draw_speed	C4B6
+		_tmp_text_in_speed	C4B7
+		_tmp_text_out_speed	C4B8
+		_tmp_text_draw_speed	C4B9
+		_text_num_lines	C4BA
+		_avatar_enabled	C4BB
+		_menu_enabled	C4BC
+		_menu_index	C4BD
+		_menu_flag	C4BE
+		_menu_num_options	C4C0
+		_menu_cancel_on_last_option	C4C1
+		_menu_cancel_on_b	C4C2
+		_menu_layout	C4C3
+		_text_lines	C4C4
+		_tmp_text_lines	C514
+		_music_9e0bd7281_Data	C564
+		_music_5ec6132a4_Data	C568
+		_music_6405cc2d3_Data	C56C
+		_music_d359420b0_Data	C570
+		_music_98dbca722_Data	C586
+		_fade_running	C5CA
+		gbt_playing	C5D1
+		gbt_song	C5D2
+		gbt_bank	C5D4
+		gbt_speed	C5D5
+		gbt_temp_play_data	C5D6
+		gbt_loop_enabled	C5E2
+		gbt_ticks_elapsed	C5E3
+		gbt_current_step	C5E4
+		gbt_current_pattern	C5E5
+		gbt_current_step_data_ptr	C5E6
+		gbt_channels_enabled	C5E8
+		gbt_pan	C5E9
+		gbt_vol	C5ED
+		gbt_instr	C5F1
+		gbt_freq	C5F5
+		gbt_channel3_loaded_instrument	C5FB
+		gbt_arpeggio_freq_index	C5FC
+		gbt_arpeggio_enabled	C605
+		gbt_arpeggio_tick	C608
+		gbt_cut_note_tick	C60B
+		gbt_have_to_stop_next_step	C60F
+		gbt_update_pattern_pointers	C610
 AREA _BSS
 	RADIX HEX
-	BASE C60C
+	BASE C611
 	SIZE 005E
 	ATTRIB REL CON
 	GLOBALS
-		__cpu	C60C
-		.mode	C60D
-		__io_out	C60E
-		__io_in	C60F
-		__io_status	C610
-		.vbl_done	C611
-		__current_bank	C612
-		_sys_time	C613
-		.sys_time	C613
-		.int_0x40	C615
-		.int_0x48	C625
-		.int_0x50	C635
-		.int_0x58	C645
-		.int_0x60	C655
-		.randhi	C665
-		.randlo	C666
+		__cpu	C611
+		.mode	C612
+		__io_out	C613
+		__io_in	C614
+		__io_status	C615
+		.vbl_done	C616
+		__current_bank	C617
+		_sys_time	C618
+		.sys_time	C618
+		.int_0x40	C61A
+		.int_0x48	C62A
+		.int_0x50	C63A
+		.int_0x58	C64A
+		.int_0x60	C65A
+		.randhi	C66A
+		.randlo	C66B
 AREA _HEAP
 	RADIX HEX
-	BASE C66A
+	BASE C66F
 	SIZE 0000
 	ATTRIB REL CON
 	GLOBALS
-		_malloc_heap_start	C66A
+		_malloc_heap_start	C66F
 AREA _OVERLAY
 	RADIX HEX
-	BASE C66A
+	BASE C66F
 	SIZE 0000
 	ATTRIB REL CON
 AREA _ISEG
 	RADIX HEX
-	BASE C66A
+	BASE C66F
 	SIZE 0000
 	ATTRIB REL CON
 AREA _BSEG
 	RADIX HEX
-	BASE C66A
+	BASE C66F
 	SIZE 0000
 	ATTRIB REL CON
 AREA _XSEG
 	RADIX HEX
-	BASE C66A
+	BASE C66F
 	SIZE 0000
 	ATTRIB REL CON
 AREA _CODE_3
@@ -522,27 +522,27 @@ AREA _CODE_3
 AREA _CODE_5
 	RADIX HEX
 	BASE 4000
-	SIZE 0108
+	SIZE 0165
 	ATTRIB REL CON
 	GLOBALS
 		_tileset_bank_ptrs	4000
-		_background_bank_ptrs	400C
-		_sprite_bank_ptrs	4027
-		_scene_bank_ptrs	405A
-		_string_bank_ptrs	4078
-		_avatar_bank_ptrs	40F9
-		_music_banks	4102
+		_background_bank_ptrs	400F
+		_sprite_bank_ptrs	402D
+		_scene_bank_ptrs	4072
+		_string_bank_ptrs	4093
+		_avatar_bank_ptrs	4156
+		_music_banks	415F
 AREA _CODE_6
 	RADIX HEX
 	BASE 4000
-	SIZE 3F40
+	SIZE 3FC4
 	ATTRIB REL CON
 	GLOBALS
 		_bank_6_data	4000
 AREA _CODE_7
 	RADIX HEX
 	BASE 4000
-	SIZE 24CC
+	SIZE 332F
 	ATTRIB REL CON
 	GLOBALS
 		_bank_7_data	4000
@@ -662,60 +662,60 @@ AREA _CODE_4
 		_UIDrawFrame_b	6F2E
 		_UIDrawDialogueFrame_b	704E
 		_UISetColor_b	7061
-AREA _CODE_12
-	RADIX HEX
-	BASE 4000
-	SIZE 011B
-	ATTRIB REL CON
-	GLOBALS
-		_music_43566df840	4000
-AREA _CODE_11
-	RADIX HEX
-	BASE 4000
-	SIZE 010E
-	ATTRIB REL CON
-	GLOBALS
-		_music_7d84858930	4000
 AREA _CODE_9
 	RADIX HEX
 	BASE 4000
 	SIZE 010C
 	ATTRIB REL CON
 	GLOBALS
-		_music_a2b5973610	4000
-AREA _CODE_10
+		_music_9e0bd72810	4000
+AREA _CODE_12
 	RADIX HEX
 	BASE 4000
-	SIZE 119C
+	SIZE 011B
 	ATTRIB REL CON
 	GLOBALS
-		_music_056e8bac20	4000
-		_music_056e8bac21	4123
-		_music_056e8bac22	4249
-		_music_056e8bac23	4376
-		_music_056e8bac24	44A0
-		_music_056e8bac25	45CD
-		_music_056e8bac26	46F9
-		_music_056e8bac27	4822
-		_music_056e8bac28	495D
-		_music_056e8bac29	4A97
-		_music_056e8bac210	4BBD
-		_music_056e8bac211	4CE3
-		_music_056e8bac212	4E14
-		_music_056e8bac213	4F3E
-		_music_056e8bac214	506F
+		_music_5ec6132a40	4000
+AREA _CODE_11
+	RADIX HEX
+	BASE 4000
+	SIZE 010E
+	ATTRIB REL CON
+	GLOBALS
+		_music_6405cc2d30	4000
 AREA _CODE_8
 	RADIX HEX
 	BASE 4000
 	SIZE 0701
 	ATTRIB REL CON
 	GLOBALS
-		_music_0bb9bba600	4000
-		_music_0bb9bba601	4116
-		_music_0bb9bba602	4229
-		_music_0bb9bba603	4357
-		_music_0bb9bba604	4481
-		_music_0bb9bba605	45D1
+		_music_d359420b00	4000
+		_music_d359420b01	4116
+		_music_d359420b02	4229
+		_music_d359420b03	4357
+		_music_d359420b04	4481
+		_music_d359420b05	45D1
+AREA _CODE_10
+	RADIX HEX
+	BASE 4000
+	SIZE 119C
+	ATTRIB REL CON
+	GLOBALS
+		_music_98dbca7220	4000
+		_music_98dbca7221	4123
+		_music_98dbca7222	4249
+		_music_98dbca7223	4376
+		_music_98dbca7224	44A0
+		_music_98dbca7225	45CD
+		_music_98dbca7226	46F9
+		_music_98dbca7227	4822
+		_music_98dbca7228	495D
+		_music_98dbca7229	4A97
+		_music_98dbca72210	4BBD
+		_music_98dbca72211	4CE3
+		_music_98dbca72212	4E14
+		_music_98dbca72213	4F3E
+		_music_98dbca72214	506F
 AREA _CODE_1
 	RADIX HEX
 	BASE 4000
@@ -732,49 +732,49 @@ MODULES
 	FILE /tmp/_gbs/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE obj/Scene_b.o
-		NAME lcc58200
+		NAME lcc165540
 	FILE obj/data/data_ptrs.o
-		NAME lcc58240
+		NAME lcc165580
 	FILE obj/data/bank_6.o
-		NAME lcc58280
+		NAME lcc165620
 	FILE obj/data/bank_7.o
-		NAME lcc58320
+		NAME lcc165660
 	FILE obj/Scene.o
-		NAME lcc58360
+		NAME lcc165700
 	FILE obj/ScriptRunner_b.o
-		NAME lcc58400
+		NAME lcc165740
 	FILE obj/MusicManager.o
-		NAME lcc58440
+		NAME lcc165780
 	FILE obj/game.o
-		NAME lcc58480
+		NAME lcc165820
 	FILE obj/BankManager.o
-		NAME lcc58610
+		NAME lcc165860
 	FILE obj/SpriteHelpers.o
-		NAME lcc58690
+		NAME lcc165900
 	FILE obj/UI_b.o
-		NAME lcc58750
+		NAME lcc165940
 	FILE obj/ScriptRunner.o
-		NAME lcc58840
+		NAME lcc165980
 	FILE obj/UI.o
-		NAME lcc58890
+		NAME lcc166020
 	FILE obj/BankData.o
-		NAME lcc58990
+		NAME lcc166060
 	FILE obj/Math.o
-		NAME lcc59050
+		NAME lcc166100
 	FILE obj/Stack.o
-		NAME lcc59120
-	FILE obj/music/music_43566df84.o
-		NAME lcc59160
-	FILE obj/music/music_7d8485893.o
-		NAME lcc59200
-	FILE obj/music/music_a2b597361.o
-		NAME lcc59270
-	FILE obj/music/music_056e8bac2.o
-		NAME lcc59340
-	FILE obj/music/music_0bb9bba60.o
-		NAME lcc59380
+		NAME lcc166140
+	FILE obj/music/music_9e0bd7281.o
+		NAME lcc166180
+	FILE obj/music/music_5ec6132a4.o
+		NAME lcc166220
+	FILE obj/music/music_6405cc2d3.o
+		NAME lcc166260
+	FILE obj/music/music_d359420b0.o
+		NAME lcc166300
+	FILE obj/music/music_98dbca722.o
+		NAME lcc166340
 	FILE obj/FadeManager.o
-		NAME lcc59420
+		NAME lcc166380
 	FILE obj/gbt_player.o
 	FILE obj/gbt_player_bank1.o
 LIBRARIES
