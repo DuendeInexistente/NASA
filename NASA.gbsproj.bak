@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 594,
-        "worldScrollY": 103,
-        "zoom": 184,
+        "worldScrollX": 2111,
+        "worldScrollY": 510,
+        "zoom": 210.5,
         "customColorsWhite": "C2F8F8",
         "customColorsLight": "1697F8",
         "customColorsDark": "0A23AF",
@@ -12,7 +12,7 @@
         "startX": 0,
         "startY": 18,
         "startDirection": "down",
-        "startSceneId": "9ab4625e-1b79-4a10-965b-68cc540c38f0",
+        "startSceneId": "b2f634af-e349-4474-9043-448c4cb0c2e5",
         "playerSpriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
         "gbcFastCPUEnabled": true,
         "customColorsEnabled": true,
@@ -90,8 +90,8 @@
                 0
             ],
             "id": "0a242993-4f49-4136-8a76-5f4e64c4af3f",
-            "x": 462.3432499436555,
-            "y": 419.5875300806271,
+            "x": 406.49252255592614,
+            "y": 449.1890481071926,
             "actors": [
                 {
                     "spriteSheetId": "05b9798c-c8d3-4c46-a004-5a1b07762edf",
@@ -1578,13 +1578,42 @@
                     "y": 9,
                     "script": [
                         {
-                            "id": "7a9556af-0f23-44fa-85ce-496f5011c958",
-                            "command": "EVENT_TEXT",
+                            "id": "06ed3664-a17f-40f7-8777-c9105599bbcb",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "text": [
-                                    "(It still looks\nairtight)"
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "b4814b6a-3365-4e6f-a8fa-0bb4e8e9a4dd",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
+                                "false": [
+                                    {
+                                        "id": "7a9556af-0f23-44fa-85ce-496f5011c958",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "(It's still\nairtight.)"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "1cedaba2-2b9b-4bee-82d3-d4ecf376ab54",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        }
+                                    },
+                                    {
+                                        "id": "6bfcd180-48c1-432d-be34-95937a4e4f98",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -2901,8 +2930,8 @@
                 0
             ],
             "id": "df51813b-3d9f-4134-89b1-722858628fff",
-            "x": 938.052256254384,
-            "y": 436.8495440729484,
+            "x": 1212.4112306133582,
+            "y": 550.9521081755123,
             "actors": [
                 {
                     "spriteSheetId": "7a3180b7-8f84-4c12-8ab0-1c57406f553e",
@@ -3946,6 +3975,31 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "2c0a8d0a-6b7c-4c4d-ae02-124c3ad8167d",
+                    "x": 0,
+                    "y": 14,
+                    "width": 1,
+                    "height": 6,
+                    "script": [
+                        {
+                            "id": "b9303224-c601-47ba-9683-4a7314191ad2",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "79d8de02-a35a-49f2-aa97-7323b0825bbd",
+                                "x": 17,
+                                "y": 11,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "b816d076-4b97-4561-960f-5507838240a8",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
             "script": [
@@ -4368,8 +4422,8 @@
                 0
             ],
             "id": "2d83292e-1290-415e-8844-2dc35a806c34",
-            "x": 933.3916540975364,
-            "y": 227.46732026143786,
+            "x": 1221.8531925590748,
+            "y": 344.13398692810443,
             "actors": [
                 {
                     "spriteSheetId": "7a3180b7-8f84-4c12-8ab0-1c57406f553e",
@@ -5065,18 +5119,18 @@
                             "children": {
                                 "true": [
                                     {
-                                        "id": "ee53f697-87bb-46ce-912f-03dca6d0b467",
-                                        "command": "EVENT_ACTOR_HIDE",
-                                        "args": {
-                                            "actorId": "$self$"
-                                        }
-                                    },
-                                    {
                                         "id": "d7506c3e-cfa9-48c9-ae5b-9c6b5c6c7d0c",
                                         "command": "EVENT_END"
                                     }
                                 ],
                                 "false": [
+                                    {
+                                        "id": "02080869-8a02-4a58-af24-7b4ab4e95748",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
                                     {
                                         "id": "7259b426-ea3a-4b0a-9247-4812390adcb7",
                                         "command": "EVENT_END"
@@ -5093,6 +5147,13 @@
             ],
             "triggers": [],
             "script": [
+                {
+                    "id": "15ec11dc-930d-4903-9b9d-d4484e066ab5",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "6286481a-0fc7-42d1-bd80-d016b2db3a2c"
+                    }
+                },
                 {
                     "id": "3349dc0f-81e7-48e4-8351-90b1bd683da6",
                     "command": "EVENT_WAIT",
@@ -5420,8 +5481,8 @@
                 15
             ],
             "id": "73326e40-a364-43a7-88a7-c7157d31cd3f",
-            "x": 752.6349206349205,
-            "y": 224.22109112845447,
+            "x": 1028.0497019320544,
+            "y": 344.53929285083075,
             "actors": [
                 {
                     "spriteSheetId": "e71289bc-5fda-4b58-b896-f69416ca615e",
@@ -5731,6 +5792,39 @@
                     "id": "d3e5bdaf-b0f1-40f2-b086-c6895e9dcd44",
                     "x": 12,
                     "y": 7
+                },
+                {
+                    "spriteSheetId": "7a3180b7-8f84-4c12-8ab0-1c57406f553e",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "1",
+                    "id": "35c80b96-9313-48f0-9381-7e5efa483493",
+                    "x": 14,
+                    "y": 13,
+                    "animate": true,
+                    "script": [
+                        {
+                            "id": "59ee870b-8d0d-464d-8e85-8201bdb37536",
+                            "command": "EVENT_PLAYER_SET_SPRITE",
+                            "args": {
+                                "spriteSheetId": "bcfd1f72-a21a-49ec-874d-c735adff5508"
+                            }
+                        },
+                        {
+                            "id": "071e51b7-d279-4912-a535-a522cbd2b17b",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "2"
+                            }
+                        },
+                        {
+                            "id": "39607219-4a10-4cb8-91bf-f3ca86e810b2",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "__type": "actor"
                 }
             ],
             "triggers": [
@@ -5954,6 +6048,90 @@
                     "command": "EVENT_END"
                 }
             ]
+        },
+        {
+            "name": "Farm",
+            "backgroundId": "cffa107f-29aa-445e-bb0b-d2dfa1f19821",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                6,
+                0,
+                96,
+                0,
+                0,
+                0,
+                0,
+                0,
+                184,
+                127,
+                128,
+                0,
+                0,
+                12,
+                0,
+                176,
+                0,
+                0,
+                232,
+                31,
+                128,
+                254,
+                1,
+                40,
+                80,
+                128,
+                2,
+                5,
+                248,
+                127,
+                2,
+                0,
+                32,
+                0,
+                0,
+                48,
+                128,
+                1,
+                3,
+                24,
+                224,
+                127,
+                0
+            ],
+            "id": "79d8de02-a35a-49f2-aa97-7323b0825bbd",
+            "x": 1023.3469652710157,
+            "y": 581.1853294384944,
+            "actors": [],
+            "triggers": [
+                {
+                    "trigger": "walk",
+                    "id": "04fcb790-fb70-425e-8db7-da231fc2cb62",
+                    "x": 19,
+                    "y": 0,
+                    "width": 1,
+                    "height": 18,
+                    "script": [
+                        {
+                            "id": "0cd1ddd7-3d9d-42a8-90d9-fd844d956281",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "df51813b-3d9f-4134-89b1-722858628fff",
+                                "x": 3,
+                                "y": 17,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "494ba3a8-e67c-4436-88cf-8c94c807aab8",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "_version": "1.2.0",
@@ -6010,7 +6188,7 @@
             "imageWidth": 160,
             "imageHeight": 200,
             "filename": "1.png",
-            "_v": 1579486232724
+            "_v": 1587424692116
         },
         {
             "id": "9558e390-b73b-4b1c-a1a0-889c78dadc46",
@@ -6020,7 +6198,7 @@
             "imageWidth": 160,
             "imageHeight": 160,
             "filename": "2.png",
-            "_v": 1579486232723
+            "_v": 1587424691996
         },
         {
             "id": "05300c3b-f6e8-4b7f-a7e4-b1c284a8050d",
@@ -6030,7 +6208,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "3.png",
-            "_v": 1579486232866
+            "_v": 1587424691998
         },
         {
             "id": "bbb44f6f-5bf7-48e9-a47d-1ae9a78d23b6",
@@ -6040,7 +6218,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "4.png",
-            "_v": 1579486232724
+            "_v": 1587424691998
         },
         {
             "id": "5247ef67-14ea-4b9d-909e-05eade07b7b7",
@@ -6050,7 +6228,7 @@
             "imageWidth": 160,
             "imageHeight": 200,
             "filename": "5.png",
-            "_v": 1579486232724
+            "_v": 1587424691998
         },
         {
             "id": "55a6531e-5a18-412a-96b5-a73a5664face",
@@ -6060,7 +6238,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "6 - moving side to side.png",
-            "_v": 1579486232724
+            "_v": 1587424691998
         },
         {
             "id": "859089c9-7b17-4d0c-9fbc-7e0316df98dc",
@@ -6070,7 +6248,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "7 - inside big ball building.png",
-            "_v": 1579486232724
+            "_v": 1587424691998
         },
         {
             "id": "5bcf37d8-66a2-4b16-bf39-ed977c904de5",
@@ -6080,7 +6258,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "8 - inside shack.png",
-            "_v": 1579486232724
+            "_v": 1587424692116
+        },
+        {
+            "id": "cffa107f-29aa-445e-bb0b-d2dfa1f19821",
+            "name": "9 - farm",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "9 - farm.png",
+            "_v": 1587424691998
         },
         {
             "id": "37c18dfd-67ca-45fa-9d18-9da9d2ece2bf",
@@ -6090,7 +6278,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Credits1.png",
-            "_v": 1579486232724
+            "_v": 1587424691998
         },
         {
             "id": "7f447d29-baba-4eaa-b387-9782eec551c3",
@@ -6100,7 +6288,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Credits2.png",
-            "_v": 1579486232724
+            "_v": 1587424691998
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -6110,7 +6298,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1579486232724
+            "_v": 1587424692116
         },
         {
             "id": "96dfb48d-72d8-420a-adaa-6bf05a981af1",
@@ -6120,7 +6308,7 @@
             "imageWidth": 400,
             "imageHeight": 900,
             "filename": "tileset.png",
-            "_v": 1579486232891
+            "_v": 1587424692008
         }
     ],
     "spriteSheets": [
@@ -6130,7 +6318,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "345458043947057172.png",
-            "_v": 1579486232870
+            "_v": 1587424692115
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -6138,7 +6326,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1579486232866
+            "_v": 1587424692116
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -6146,7 +6334,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1579486232866
+            "_v": 1587424692116
         },
         {
             "id": "f1a6e99c-97a1-4c38-a1ef-b08d6da66f74",
@@ -6154,7 +6342,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "falling nasa.png",
-            "_v": 1579486232866
+            "_v": 1587424692116
         },
         {
             "id": "45341826-1c1d-42bf-a4b7-4def2dc102f2",
@@ -6162,7 +6350,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "falling ship.png",
-            "_v": 1579486232866
+            "_v": 1587424692116
         },
         {
             "id": "ac3e9db0-597c-4cc6-b15e-814496e3d005",
@@ -6170,7 +6358,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "falling ship 90.png",
-            "_v": 1579486232866
+            "_v": 1587424692116
         },
         {
             "id": "85769e4a-6ebf-43c4-bf98-6171799dafbc",
@@ -6178,7 +6366,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "GBlight.png",
-            "_v": 1579486232866
+            "_v": 1587424692116
         },
         {
             "id": "900fac54-e11d-47a9-abd3-c4a770235c9f",
@@ -6186,7 +6374,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "halving door.png",
-            "_v": 1579486232866
+            "_v": 1587424692116
         },
         {
             "id": "0e57b383-c45f-4fb1-914a-9a6d61b0261c",
@@ -6194,7 +6382,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "jumping nasa.png",
-            "_v": 1579486232866
+            "_v": 1587424692116
         },
         {
             "id": "1c6c42a6-2b18-405c-be9d-50e3d6b2579e",
@@ -6202,7 +6390,15 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Medium nasa.png",
-            "_v": 1579486232867
+            "_v": 1587424692116
+        },
+        {
+            "id": "da8da5cb-e544-499a-bc9f-9062d82ead8f",
+            "name": "mini portraits/oneeye",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "mini portraits/oneeye.png",
+            "_v": 1587424692117
         },
         {
             "id": "30703442-ce51-4a82-b296-f6f94595f927",
@@ -6210,7 +6406,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "nasa.png",
-            "_v": 1579486232867
+            "_v": 1587424692116
         },
         {
             "id": "6124dfe2-2ba7-4646-92db-3b2f124a553d",
@@ -6218,7 +6414,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "nasa portrait.png",
-            "_v": 1579486232867
+            "_v": 1587424692116
         },
         {
             "id": "5160cb02-41e1-45d7-b85c-d6d4413c6a36",
@@ -6226,7 +6422,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "nothing.png",
-            "_v": 1579486232867
+            "_v": 1587424692117
         },
         {
             "id": "d15265ce-ce2e-4c54-8a1f-1da145cdf12e",
@@ -6234,7 +6430,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "objects/fallen door.png",
-            "_v": 1579486232867
+            "_v": 1587424692116
         },
         {
             "id": "71c5cd3c-3a6e-4eb3-ac06-1eafabe631c4",
@@ -6242,7 +6438,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "objects/GBswitch.png",
-            "_v": 1579486232868
+            "_v": 1587424692117
         },
         {
             "id": "560ef166-207c-4e92-b38f-59b60117568b",
@@ -6250,7 +6446,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "objects/glimmer.png",
-            "_v": 1579486232868
+            "_v": 1587424692117
         },
         {
             "id": "151e8d84-52ec-4a22-a8bd-e5af14382133",
@@ -6258,7 +6454,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "objects/hammer.png",
-            "_v": 1579486232868
+            "_v": 1587424692117
         },
         {
             "id": "adb8e465-7b44-4670-bf76-0bc4da06d3c2",
@@ -6266,7 +6462,7 @@
             "numFrames": 8,
             "type": "animated",
             "filename": "objects/mirrors.png",
-            "_v": 1579486232869
+            "_v": 1587424692117
         },
         {
             "id": "9253de87-58db-42e4-b9bb-34a28eda1682",
@@ -6274,7 +6470,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "objects/Paper.png",
-            "_v": 1579486232907
+            "_v": 1587424692117
         },
         {
             "id": "160ed2bd-1b9a-493a-81c5-81f3e68ebf86",
@@ -6282,7 +6478,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "objects/radio.png",
-            "_v": 1579486232869
+            "_v": 1587424692117
         },
         {
             "id": "4db16541-ec91-4401-8960-c00ef1d7a154",
@@ -6290,7 +6486,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "objects/stick.png",
-            "_v": 1579486232870
+            "_v": 1587424692117
         },
         {
             "id": "e71289bc-5fda-4b58-b896-f69416ca615e",
@@ -6298,7 +6494,15 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "objects/twinkling glimmer.png",
-            "_v": 1579486232869
+            "_v": 1587424692117
+        },
+        {
+            "id": "862b8a92-db46-4080-9f3f-57e5a6a2bf18",
+            "name": "oneeye",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "oneeye.png",
+            "_v": 1587424692117
         },
         {
             "id": "61c5b2fb-5ad8-4ff3-b5c0-02eed310fc0e",
@@ -6306,7 +6510,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Pure white.png",
-            "_v": 1579486232869
+            "_v": 1587424692117
         },
         {
             "id": "bcfd1f72-a21a-49ec-874d-c735adff5508",
@@ -6314,7 +6518,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "scooter nasa moving.png",
-            "_v": 1579486232869
+            "_v": 1587424692120
         },
         {
             "id": "8054bc35-7ad2-4d06-a52d-256eb82b9c9f",
@@ -6322,7 +6526,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "scooter nasa still.png",
-            "_v": 1579486232870
+            "_v": 1587424692117
         },
         {
             "id": "05b9798c-c8d3-4c46-a004-5a1b07762edf",
@@ -6330,7 +6534,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "smoke.png",
-            "_v": 1579486232870
+            "_v": 1587424692120
         },
         {
             "id": "cbc6704a-7aca-49f5-89ed-2985d2fd2413",
@@ -6338,7 +6542,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "smol nasa.png",
-            "_v": 1579486232974
+            "_v": 1587424692131
         },
         {
             "id": "7a3180b7-8f84-4c12-8ab0-1c57406f553e",
@@ -6346,7 +6550,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "spinning door.png",
-            "_v": 1579486232870
+            "_v": 1587424692124
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -6354,7 +6558,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1579486232870
+            "_v": 1587424692124
         }
     ],
     "music": [
@@ -6362,43 +6566,43 @@
             "id": "1442d1b0-1dd2-41ce-b783-7fd6cb8add15",
             "name": "Darkstone",
             "filename": "Darkstone.mod",
-            "_v": 1579486232599
+            "_v": 1587424691923
         },
         {
             "id": "5ab47b87-e532-412f-9213-3395750222ee",
             "name": "Duck Tales Drumbeat",
             "filename": "Duck Tales Drumbeat.mod",
-            "_v": 1579486232601
+            "_v": 1587424691923
         },
         {
             "id": "071ef646-10e1-41bb-a245-e63a2d658a67",
             "name": "Great Melody 01",
             "filename": "Great Melody 01.mod",
-            "_v": 1579486232601
+            "_v": 1587424691923
         },
         {
             "id": "6191d38e-5b2e-4b46-aa91-cf5e690f5fdb",
             "name": "Kick Kick Kick Crash",
             "filename": "Kick Kick Kick Crash.mod",
-            "_v": 1579486232601
+            "_v": 1587424691923
         },
         {
             "id": "e33ff888-01f3-48bd-a742-90f104913aed",
             "name": "Powerup2",
             "filename": "Powerup2.mod",
-            "_v": 1579486232601
+            "_v": 1587424691923
         },
         {
             "id": "e80c4040-218c-465e-a9ec-e8e42241442b",
             "name": "Radical Victory",
             "filename": "Radical Victory.mod",
-            "_v": 1579486232602
+            "_v": 1587424691923
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1579486232602
+            "_v": 1587424691923
         }
     ],
     "customEvents": [

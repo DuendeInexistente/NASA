@@ -1,4 +1,5 @@
 *gbsproj* filter=git-crypt diff=git-crypt
+Notes.md filter=git-crypt diff=git-crypt
 
 .gitattributes !filter !diff
 
