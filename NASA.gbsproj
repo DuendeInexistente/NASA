@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1947,
-        "worldScrollY": 552,
+        "worldScrollX": 106,
+        "worldScrollY": 524,
         "zoom": 200,
         "customColorsWhite": "C2F8F8",
         "customColorsLight": "1697F8",
@@ -2342,7 +2342,7 @@
                     "trigger": "walk",
                     "id": "bd38ba13-1e4b-456c-bd4c-9d42938ee5c0",
                     "x": 13,
-                    "y": 13,
+                    "y": 11,
                     "width": 2,
                     "height": 1,
                     "script": [
@@ -6084,7 +6084,7 @@
                 8,
                 0,
                 1,
-                159,
+                15,
                 15
             ],
             "id": "73326e40-a364-43a7-88a7-c7157d31cd3f",
@@ -6475,7 +6475,8 @@
                                                                                         "id": "67e41cd7-46ff-47c8-8171-2fb43c0d3532",
                                                                                         "command": "EVENT_PLAYER_SET_SPRITE",
                                                                                         "args": {
-                                                                                            "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927"
+                                                                                            "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
+                                                                                            "__comment": true
                                                                                         },
                                                                                         "__type": "event"
                                                                                     },
@@ -6496,6 +6497,16 @@
                                                                                         }
                                                                                     },
                                                                                     {
+                                                                                        "id": "b8405bda-66fb-4912-8714-b01f84e08387",
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Speed=2"
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        }
+                                                                                    },
+                                                                                    {
                                                                                         "id": "148cd60c-c928-4fce-a2ae-7b7497d8d8be",
                                                                                         "command": "EVENT_END"
                                                                                     }
@@ -6513,7 +6524,7 @@
                                                                                         "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                                         "args": {
                                                                                             "actorId": "player",
-                                                                                            "speed": "2"
+                                                                                            "speed": "3"
                                                                                         }
                                                                                     },
                                                                                     {
@@ -6521,6 +6532,16 @@
                                                                                         "command": "EVENT_SET_TRUE",
                                                                                         "args": {
                                                                                             "variable": "0"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "e38a2e60-3b31-4673-a051-6834d5cd14e8",
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Speed=3"
+                                                                                            ],
+                                                                                            "avatarId": ""
                                                                                         }
                                                                                     },
                                                                                     {
@@ -6688,7 +6709,8 @@
                                                                 "id": "67e41cd7-46ff-47c8-8171-2fb43c0d3532",
                                                                 "command": "EVENT_PLAYER_SET_SPRITE",
                                                                 "args": {
-                                                                    "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927"
+                                                                    "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
+                                                                    "__comment": true
                                                                 },
                                                                 "__type": "event"
                                                             },
@@ -6709,6 +6731,16 @@
                                                                 }
                                                             },
                                                             {
+                                                                "id": "b8405bda-66fb-4912-8714-b01f84e08387",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Speed=2"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "148cd60c-c928-4fce-a2ae-7b7497d8d8be",
                                                                 "command": "EVENT_END"
                                                             }
@@ -6726,7 +6758,7 @@
                                                                 "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                 "args": {
                                                                     "actorId": "player",
-                                                                    "speed": "2"
+                                                                    "speed": "3"
                                                                 }
                                                             },
                                                             {
@@ -6734,6 +6766,16 @@
                                                                 "command": "EVENT_SET_TRUE",
                                                                 "args": {
                                                                     "variable": "0"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "e38a2e60-3b31-4673-a051-6834d5cd14e8",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Speed=3"
+                                                                    ],
+                                                                    "avatarId": ""
                                                                 }
                                                             },
                                                             {
@@ -6768,9 +6810,9 @@
                 {
                     "trigger": "walk",
                     "id": "367c02e9-825e-43e5-b478-5ac44a96536e",
-                    "x": 9,
+                    "x": 8,
                     "y": 17,
-                    "width": 2,
+                    "width": 4,
                     "height": 1,
                     "script": [
                         {
@@ -8029,7 +8071,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "8 - inside shack.png",
-            "_v": 1587771933139
+            "_v": 1587780576909
         },
         {
             "id": "cffa107f-29aa-445e-bb0b-d2dfa1f19821",
@@ -8581,7 +8623,8 @@
                                             "id": "67e41cd7-46ff-47c8-8171-2fb43c0d3532",
                                             "command": "EVENT_PLAYER_SET_SPRITE",
                                             "args": {
-                                                "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927"
+                                                "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
+                                                "__comment": true
                                             },
                                             "__type": "event"
                                         },
@@ -8602,6 +8645,16 @@
                                             }
                                         },
                                         {
+                                            "id": "b8405bda-66fb-4912-8714-b01f84e08387",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Speed=2"
+                                                ],
+                                                "avatarId": ""
+                                            }
+                                        },
+                                        {
                                             "id": "148cd60c-c928-4fce-a2ae-7b7497d8d8be",
                                             "command": "EVENT_END"
                                         }
@@ -8619,7 +8672,7 @@
                                             "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                             "args": {
                                                 "actorId": "player",
-                                                "speed": "2"
+                                                "speed": "3"
                                             }
                                         },
                                         {
@@ -8627,6 +8680,16 @@
                                             "command": "EVENT_SET_TRUE",
                                             "args": {
                                                 "variable": "0"
+                                            }
+                                        },
+                                        {
+                                            "id": "e38a2e60-3b31-4673-a051-6834d5cd14e8",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Speed=3"
+                                                ],
+                                                "avatarId": ""
                                             }
                                         },
                                         {

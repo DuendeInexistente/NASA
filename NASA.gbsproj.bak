@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1899,
-        "worldScrollY": 592,
+        "worldScrollX": 106,
+        "worldScrollY": 524,
         "zoom": 200,
         "customColorsWhite": "C2F8F8",
         "customColorsLight": "1697F8",
@@ -2342,7 +2342,7 @@
                     "trigger": "walk",
                     "id": "bd38ba13-1e4b-456c-bd4c-9d42938ee5c0",
                     "x": 13,
-                    "y": 13,
+                    "y": 11,
                     "width": 2,
                     "height": 1,
                     "script": [
@@ -6084,7 +6084,7 @@
                 8,
                 0,
                 1,
-                159,
+                15,
                 15
             ],
             "id": "73326e40-a364-43a7-88a7-c7157d31cd3f",
@@ -6475,7 +6475,8 @@
                                                                                         "id": "67e41cd7-46ff-47c8-8171-2fb43c0d3532",
                                                                                         "command": "EVENT_PLAYER_SET_SPRITE",
                                                                                         "args": {
-                                                                                            "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927"
+                                                                                            "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
+                                                                                            "__comment": true
                                                                                         },
                                                                                         "__type": "event"
                                                                                     },
@@ -6484,7 +6485,7 @@
                                                                                         "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                                         "args": {
                                                                                             "actorId": "player",
-                                                                                            "speed": "1"
+                                                                                            "speed": "2"
                                                                                         },
                                                                                         "__type": "event"
                                                                                     },
@@ -6513,7 +6514,7 @@
                                                                                         "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                                         "args": {
                                                                                             "actorId": "player",
-                                                                                            "speed": "2"
+                                                                                            "speed": "3"
                                                                                         }
                                                                                     },
                                                                                     {
@@ -6688,7 +6689,8 @@
                                                                 "id": "67e41cd7-46ff-47c8-8171-2fb43c0d3532",
                                                                 "command": "EVENT_PLAYER_SET_SPRITE",
                                                                 "args": {
-                                                                    "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927"
+                                                                    "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
+                                                                    "__comment": true
                                                                 },
                                                                 "__type": "event"
                                                             },
@@ -6697,7 +6699,7 @@
                                                                 "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                 "args": {
                                                                     "actorId": "player",
-                                                                    "speed": "1"
+                                                                    "speed": "2"
                                                                 },
                                                                 "__type": "event"
                                                             },
@@ -6726,7 +6728,7 @@
                                                                 "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                 "args": {
                                                                     "actorId": "player",
-                                                                    "speed": "2"
+                                                                    "speed": "3"
                                                                 }
                                                             },
                                                             {
@@ -6768,9 +6770,9 @@
                 {
                     "trigger": "walk",
                     "id": "367c02e9-825e-43e5-b478-5ac44a96536e",
-                    "x": 9,
+                    "x": 8,
                     "y": 17,
-                    "width": 2,
+                    "width": 4,
                     "height": 1,
                     "script": [
                         {
@@ -8029,7 +8031,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "8 - inside shack.png",
-            "_v": 1587771933139
+            "_v": 1587780576909
         },
         {
             "id": "cffa107f-29aa-445e-bb0b-d2dfa1f19821",
@@ -8581,7 +8583,8 @@
                                             "id": "67e41cd7-46ff-47c8-8171-2fb43c0d3532",
                                             "command": "EVENT_PLAYER_SET_SPRITE",
                                             "args": {
-                                                "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927"
+                                                "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
+                                                "__comment": true
                                             },
                                             "__type": "event"
                                         },
@@ -8590,7 +8593,7 @@
                                             "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                             "args": {
                                                 "actorId": "player",
-                                                "speed": "1"
+                                                "speed": "2"
                                             },
                                             "__type": "event"
                                         },
@@ -8619,7 +8622,7 @@
                                             "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                             "args": {
                                                 "actorId": "player",
-                                                "speed": "2"
+                                                "speed": "3"
                                             }
                                         },
                                         {
