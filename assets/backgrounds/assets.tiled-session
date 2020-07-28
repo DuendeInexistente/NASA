@@ -1,0 +1,446 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "5.tmx",
+    "automapping.whileDrawing": false,
+    "expandedProjectPaths": [
+        "."
+    ],
+    "exportAsImage.drawTileGrid": false,
+    "exportAsImage.includeBackgroundColor": false,
+    "exportAsImage.useCurrentScale": false,
+    "exportAsImage.visibleLayersOnly": true,
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "/home/cammera/Documents/Quesque/assets/backgrounds/GUI/inventory.tmx": {
+            "scale": 3,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 98.33333333333333,
+                "y": 79.66666666666666
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/Bridge Over Void.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 90.66666666666666,
+                "y": 68
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/Entrance.tmx": {
+            "scale": 3,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 111,
+                "y": 107.66666666666666
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/Hardware room.tmx": {
+            "scale": 2,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 120,
+                "y": 9.5
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/Leafs pit.tmx": {
+            "scale": 4,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 73.75,
+                "y": 49.25
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/Necias pit": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 79,
+                "y": 71
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/Necias pit.tmx": {
+            "scale": 4,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 151,
+                "y": 49.25
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/RightEntrance -lounge- .tmx": {
+            "scale": 3,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 77.33333333333333,
+                "y": 45.33333333333333
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/Rules/rule1.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 41.33333333333333,
+                "y": 98.66666666666666
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/Water entrance.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 256,
+                "y": 106.66666666666666
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/blast room.tmx": {
+            "scale": 3,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 96.66666666666666,
+                "y": 105
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/collapsing hallway.tmx": {
+            "scale": 3,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 81,
+                "y": 34.33333333333333
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/hub.tmx": {
+            "scale": 2,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 123.5,
+                "y": 29.5
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/oil room end.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 161.33333333333331,
+                "y": -49.33333333333333
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/oil room middle - divided.tmx": {
+            "scale": 1,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 96,
+                "y": 236
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/oil room middle - walkable.tmx": {
+            "scale": 1,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 111,
+                "y": 115
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/pitdragging.tmx": {
+            "scale": 3,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 98.66666666666666,
+                "y": 86
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/seas pit.tmx": {
+            "scale": 2,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 105,
+                "y": 75.5
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/secrettubes.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 88,
+                "y": 120
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/test room.tmx": {
+            "scale": 3,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 203,
+                "y": 104.66666666666666
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/underwater.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 203,
+                "y": 60
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Lab/untitled.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 79,
+                "y": 79
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Tilesets/1.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 97,
+                "y": 131.5
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Tilesets/First.tsx": {
+            "scaleInDock": 0.75
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/Tilesets/untitled.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 131,
+                "y": 157.5
+            }
+        },
+        "/home/cammera/Documents/Quesque/assets/backgrounds/black.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 79,
+                "y": 69
+            }
+        },
+        "/home/cammera/untitled.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 10,
+            "viewCenter": {
+                "x": 336.66666666666663,
+                "y": 183.33333333333331
+            }
+        },
+        "/media/cammera/Datos/Descargas/Gits/Mias/My art/@Assets/pricesheet.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 221.99999999999997,
+                "y": 162.33333333333337
+            }
+        },
+        "/media/cammera/Datos/Descargas/Gits/Mias/My art/@Assets/untitled.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 12,
+            "viewCenter": {
+                "x": 128,
+                "y": 221.33333333333331
+            }
+        },
+        "/media/cammera/Datos/Descargas/Gits/Mias/My art/@Others/2019/tower thing/untitled.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 292,
+                "y": 256
+            }
+        },
+        "/media/cammera/Datos/Descargas/Gits/Mias/My art/Goat towers/assets/tiles.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.5
+        },
+        "/media/cammera/Datos/Descargas/Gits/Mias/My art/Goat towers/rooms/Title screen/wall.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 72.5,
+                "y": 256.5
+            }
+        },
+        "/media/cammera/Datos/Descargas/Gits/Mias/My art/Goat towers/rooms/entranceway.tmx": {
+            "scale": 2,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 120.25,
+                "y": 144
+            }
+        },
+        "/media/cammera/Datos/Descargas/Gits/Mias/My art/Goat towers/rooms/room with stairs.tmx": {
+            "scale": 2,
+            "selectedLayer": 11,
+            "viewCenter": {
+                "x": 144.25,
+                "y": 239.75
+            }
+        },
+        "/media/cammera/Datos/Descargas/Gits/Mias/My art/MLP takes Blooper/studio.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 315,
+                "y": 127
+            }
+        },
+        "/media/cammera/Datos/Descargas/Gits/Mias/untitled.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1305.4545454545455,
+                "y": 1421.0909090909092
+            }
+        },
+        "1.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80,
+                "y": 99.5
+            }
+        },
+        "2.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80,
+                "y": 80.5
+            }
+        },
+        "3.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80,
+                "y": 72.66666666666663
+            }
+        },
+        "4.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80,
+                "y": 72.5
+            }
+        },
+        "5.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -106.66666666666669,
+                "y": 321.99999999999994
+            }
+        },
+        "6 - moving side to side.tmx": {
+            "scale": 3,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 80,
+                "y": 72.16666666666666
+            }
+        },
+        "7 - inside big ball building - lit.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80,
+                "y": 72.66666666666663
+            }
+        },
+        "7 - inside big ball building.tmx": {
+            "scale": 3,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80.16666666666666,
+                "y": 72.16666666666666
+            }
+        },
+        "8 - inside shack.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80,
+                "y": 72.66666666666663
+            }
+        },
+        "9 - farm.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80,
+                "y": 72.66666666666663
+            }
+        },
+        "NASA.tsx": {
+            "scaleInDock": 3
+        },
+        "nasa pieces.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "untitled.tmx": {
+            "scale": 4,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 130,
+                "y": 70.625
+            }
+        },
+        "world.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -7.333333333333371,
+                "y": 7.3333333333332575
+            }
+        }
+    },
+    "loadedWorlds": [
+        "/home/cammera/Documents/NASA/assets/backgrounds/world.world"
+    ],
+    "map.fixedSize": false,
+    "map.height": 18,
+    "map.lastUsedFormat": "tmx",
+    "map.orientation": 1,
+    "map.renderOrder": 2,
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 20,
+    "openFiles": [
+        "1.tmx",
+        "2.tmx",
+        "3.tmx",
+        "4.tmx",
+        "5.tmx",
+        "6 - moving side to side.tmx",
+        "7 - inside big ball building - lit.tmx",
+        "8 - inside shack.tmx",
+        "9 - farm.tmx"
+    ],
+    "project": "assets.tiled-project",
+    "recentFiles": [
+        "1.tmx",
+        "2.tmx",
+        "3.tmx",
+        "4.tmx",
+        "9 - farm.tmx",
+        "8 - inside shack.tmx",
+        "7 - inside big ball building - lit.tmx",
+        "6 - moving side to side.tmx",
+        "5.tmx",
+        "world.tmx"
+    ],
+    "resizeMap.removeObjects": false,
+    "tileset.embedInMap": false,
+    "tileset.margin": 0,
+    "tileset.spacing": 0,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.transparentColor": "#ff00ff",
+    "tileset.type": 0,
+    "tileset.useTransparentColor": false
+}

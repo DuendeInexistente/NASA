@@ -2,17 +2,17 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 106,
-        "worldScrollY": 524,
-        "zoom": 200,
+        "worldScrollX": 1176,
+        "worldScrollY": 360,
+        "zoom": 173.5,
         "customColorsWhite": "C2F8F8",
         "customColorsLight": "1697F8",
         "customColorsDark": "0A23AF",
         "customColorsBlack": "000349",
         "startX": 12,
-        "startY": 13,
+        "startY": 14,
         "startDirection": "down",
-        "startSceneId": "73326e40-a364-43a7-88a7-c7157d31cd3f",
+        "startSceneId": "61cf0bde-e680-4417-9ce5-2ab2fb58b62c",
         "playerSpriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
         "gbcFastCPUEnabled": true,
         "customColorsEnabled": true,
@@ -2877,22 +2877,22 @@
                 1,
                 128,
                 8,
-                0,
-                168,
                 144,
-                0,
-                5,
-                0,
-                0,
+                255,
                 144,
                 0,
                 0,
-                6,
+                8,
+                0,
+                144,
                 0,
                 0,
+                14,
+                0,
+                128,
                 50,
                 0,
-                162,
+                170,
                 4,
                 175,
                 74,
@@ -4158,8 +4158,8 @@
                 0
             ],
             "id": "2d83292e-1290-415e-8844-2dc35a806c34",
-            "x": 1225.6536676184571,
-            "y": 339.8584524862992,
+            "x": 1320.2114907477085,
+            "y": 318.7700171121497,
             "actors": [
                 {
                     "spriteSheetId": "7a3180b7-8f84-4c12-8ab0-1c57406f553e",
@@ -6476,7 +6476,7 @@
                                                                                         "command": "EVENT_PLAYER_SET_SPRITE",
                                                                                         "args": {
                                                                                             "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
-                                                                                            "__comment": true
+                                                                                            "__comment": false
                                                                                         },
                                                                                         "__type": "event"
                                                                                     },
@@ -6485,7 +6485,7 @@
                                                                                         "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                                         "args": {
                                                                                             "actorId": "player",
-                                                                                            "speed": "2"
+                                                                                            "speed": "1"
                                                                                         },
                                                                                         "__type": "event"
                                                                                     },
@@ -6494,6 +6494,17 @@
                                                                                         "command": "EVENT_SET_FALSE",
                                                                                         "args": {
                                                                                             "variable": "0"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "b8405bda-66fb-4912-8714-b01f84e08387",
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Speed=2"
+                                                                                            ],
+                                                                                            "avatarId": "",
+                                                                                            "__comment": true
                                                                                         }
                                                                                     },
                                                                                     {
@@ -6514,7 +6525,7 @@
                                                                                         "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                                         "args": {
                                                                                             "actorId": "player",
-                                                                                            "speed": "3"
+                                                                                            "speed": "2"
                                                                                         }
                                                                                     },
                                                                                     {
@@ -6522,6 +6533,17 @@
                                                                                         "command": "EVENT_SET_TRUE",
                                                                                         "args": {
                                                                                             "variable": "0"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "e38a2e60-3b31-4673-a051-6834d5cd14e8",
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Speed=3"
+                                                                                            ],
+                                                                                            "avatarId": "",
+                                                                                            "__comment": true
                                                                                         }
                                                                                     },
                                                                                     {
@@ -6636,131 +6658,6 @@
                         },
                         {
                             "id": "eedf96aa-7b13-488f-a95a-848055993182",
-                            "command": "EVENT_END"
-                        }
-                    ]
-                },
-                {
-                    "spriteSheetId": "6f69d41c-ee04-4e6f-b1d6-62c410b66958",
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "id": "a30e9396-6e20-4545-a509-c97e6d283a66",
-                    "x": 8,
-                    "y": 14,
-                    "script": [
-                        {
-                            "id": "155b7574-8232-4437-883a-e63d1bd1a41d",
-                            "command": "EVENT_SET_TRUE",
-                            "args": {
-                                "variable": "4"
-                            }
-                        },
-                        {
-                            "id": "601e2a39-268f-46e7-9fae-7bf5a85f21f4",
-                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                            "args": {
-                                "customEventId": "bd5ba5e7-49db-4ff2-ab4a-02723944caa0",
-                                "__name": "Scoot riding",
-                                "$variable[0]$": "499",
-                                "__comment": true
-                            },
-                            "children": {
-                                "script": [
-                                    {
-                                        "id": "9bf857f8-f521-4848-b31a-a4365ef71bc0",
-                                        "command": "EVENT_SET_INPUT_SCRIPT",
-                                        "args": {
-                                            "input": "b"
-                                        },
-                                        "children": {
-                                            "true": [
-                                                {
-                                                    "id": "16460b31-7a05-496c-be05-64139f7663b6",
-                                                    "command": "EVENT_IF_TRUE",
-                                                    "args": {
-                                                        "variable": "0",
-                                                        "__collapseElse": false
-                                                    },
-                                                    "children": {
-                                                        "true": [
-                                                            {
-                                                                "id": "67e41cd7-46ff-47c8-8171-2fb43c0d3532",
-                                                                "command": "EVENT_PLAYER_SET_SPRITE",
-                                                                "args": {
-                                                                    "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
-                                                                    "__comment": true
-                                                                },
-                                                                "__type": "event"
-                                                            },
-                                                            {
-                                                                "id": "446120b3-6020-4f17-bd46-8e10aba196fa",
-                                                                "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                "args": {
-                                                                    "actorId": "player",
-                                                                    "speed": "2"
-                                                                },
-                                                                "__type": "event"
-                                                            },
-                                                            {
-                                                                "id": "06a61a3a-7da9-433c-9d2b-3024ec5acc4c",
-                                                                "command": "EVENT_SET_FALSE",
-                                                                "args": {
-                                                                    "variable": "0"
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "148cd60c-c928-4fce-a2ae-7b7497d8d8be",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
-                                                                "id": "75c9555e-e5b4-42ce-9e19-2cce75b7d3fc",
-                                                                "command": "EVENT_PLAYER_SET_SPRITE",
-                                                                "args": {
-                                                                    "spriteSheetId": "bcfd1f72-a21a-49ec-874d-c735adff5508"
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "a181cd8b-f5f1-4540-9e7b-6c87a48556e6",
-                                                                "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                "args": {
-                                                                    "actorId": "player",
-                                                                    "speed": "3"
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "025711de-300d-4d1a-b707-f146bcab64cf",
-                                                                "command": "EVENT_SET_TRUE",
-                                                                "args": {
-                                                                    "variable": "0"
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "098f6d15-ddae-4f9a-8567-b9f597d604a9",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "id": "7d02578b-a82c-4792-a56e-a83bb18af100",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "id": "dae5c91b-cd5d-48bd-9a37-86d4f52dae6d",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "id": "be08b183-58cb-4f08-acf9-ecf44aee7a77",
                             "command": "EVENT_END"
                         }
                     ]
@@ -7323,8 +7220,8 @@
                 0
             ],
             "id": "0366f652-46fe-4e66-915b-cfe7e4f785ee",
-            "x": 1424.9266806765818,
-            "y": 340.4783724766749,
+            "x": 1505.8790616289627,
+            "y": 322.1110255378994,
             "actors": [
                 {
                     "spriteSheetId": "adb8e465-7b44-4670-bf76-0bc4da06d3c2",
@@ -7699,7 +7596,7 @@
                     "args": {
                         "variable": "500",
                         "__collapseElse": false,
-                        "__disableElse": true
+                        "__disableElse": false
                     },
                     "children": {
                         "true": [
@@ -7724,6 +7621,194 @@
                             }
                         ],
                         "false": [
+                            {
+                                "id": "889b1c61-fdfe-4d16-bfa2-a0c90d65d279",
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__collapse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "id": "3baaa801-ab11-4f4d-9926-38cd106c8cc2",
+                                            "command": "EVENT_IF_VALUE",
+                                            "args": {
+                                                "variable": "100",
+                                                "operator": ">=",
+                                                "comparator": 3,
+                                                "__collapseElse": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "id": "d4a8443c-40b3-4fb7-b953-eb83e021c603",
+                                                        "command": "EVENT_END"
+                                                    }
+                                                ],
+                                                "false": [
+                                                    {
+                                                        "id": "462401b9-d5c0-4307-8d75-d0b277bf485a",
+                                                        "command": "EVENT_GROUP",
+                                                        "args": {
+                                                            "__collapse": true,
+                                                            "__label": "Frame 0"
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "id": "27672157-6ce2-4d50-b7ef-f96c53ffeb15",
+                                                                    "command": "EVENT_WAIT",
+                                                                    "args": {
+                                                                        "time": 0.7
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "4425e9cf-ff88-4844-94fb-460f0a66ba0f",
+                                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                                    "args": {
+                                                                        "type": "tone",
+                                                                        "pitch": 1,
+                                                                        "frequency": 10,
+                                                                        "duration": 0.5,
+                                                                        "__comment": false
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "d764a881-8c3f-4621-927e-dc73f0d1a9f4",
+                                                                    "command": "EVENT_ACTOR_SET_FRAME",
+                                                                    "args": {
+                                                                        "actorId": "d5ed8f84-730d-43de-b808-a36af9e6421d",
+                                                                        "frame": 1
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "39dff2f9-7c6c-4fb7-846d-1a0e736bf528",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "__type": "event"
+                                                    },
+                                                    {
+                                                        "id": "f44eac4d-7f9c-4c2e-86de-f92776c606df",
+                                                        "command": "EVENT_GROUP",
+                                                        "args": {
+                                                            "__collapse": true,
+                                                            "__label": "Frame 1"
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "id": "0712bb0a-8df4-4a61-91f1-46d17ff4ac17",
+                                                                    "command": "EVENT_WAIT",
+                                                                    "args": {
+                                                                        "time": 0.7
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "65b2ddef-7ffe-47b3-bebc-f500c54221cc",
+                                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                                    "args": {
+                                                                        "type": "tone",
+                                                                        "pitch": 1,
+                                                                        "frequency": 10,
+                                                                        "duration": 0.5,
+                                                                        "__comment": false,
+                                                                        "__collapse": true
+                                                                    },
+                                                                    "__type": "event"
+                                                                },
+                                                                {
+                                                                    "id": "6bb34572-6de3-4bd4-97c9-98c7a8727f0d",
+                                                                    "command": "EVENT_ACTOR_SET_FRAME",
+                                                                    "args": {
+                                                                        "actorId": "d5ed8f84-730d-43de-b808-a36af9e6421d",
+                                                                        "frame": 2,
+                                                                        "__collapse": false
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "8d4ddaa0-9cfa-4cf1-9392-bb84c7b1deb9",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ab916a6a-8e32-4727-a3bb-e7a7874ee0fb",
+                                                        "command": "EVENT_GROUP",
+                                                        "args": {
+                                                            "__collapse": true,
+                                                            "__label": "Frame 2"
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "id": "fe8f212b-0d4f-4a48-abdc-a7a4cf98b56d",
+                                                                    "command": "EVENT_WAIT",
+                                                                    "args": {
+                                                                        "time": 0.7
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "52365b37-dc4d-4154-bab6-66d60cc4e3fa",
+                                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                                    "args": {
+                                                                        "type": "tone",
+                                                                        "pitch": 1,
+                                                                        "frequency": 10,
+                                                                        "duration": 0.5,
+                                                                        "__comment": false,
+                                                                        "__collapse": true
+                                                                    },
+                                                                    "__type": "event"
+                                                                },
+                                                                {
+                                                                    "id": "1fda93f4-8504-4a73-af7f-c79aafb921dd",
+                                                                    "command": "EVENT_ACTOR_SET_FRAME",
+                                                                    "args": {
+                                                                        "actorId": "d5ed8f84-730d-43de-b808-a36af9e6421d",
+                                                                        "frame": 3
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "51903f39-1102-4c4f-9875-d28488483156",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "__type": "event"
+                                                    },
+                                                    {
+                                                        "id": "6c78aa6e-9a7a-46f4-9470-d55ee475fc21",
+                                                        "command": "EVENT_WAIT",
+                                                        "args": {
+                                                            "time": 0.7
+                                                        },
+                                                        "__type": "event"
+                                                    },
+                                                    {
+                                                        "id": "7640cb5e-be65-42cc-b90e-926ed56c71e7",
+                                                        "command": "EVENT_END"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "id": "61bccdac-e499-4a88-bbb4-d761cf567ca8",
+                                            "command": "EVENT_INC_VALUE",
+                                            "args": {
+                                                "variable": "100"
+                                            }
+                                        },
+                                        {
+                                            "id": "5a2c4601-b158-44a1-b08c-3d728e498a14",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                "__type": "event"
+                            },
                             {
                                 "id": "ba8091b3-dec2-4a64-82c1-35a8c5be2d8d",
                                 "command": "EVENT_END"
@@ -7843,6 +7928,212 @@
                     "command": "EVENT_END"
                 }
             ]
+        },
+        {
+            "name": "Scene 15",
+            "backgroundId": "55a6531e-5a18-412a-96b5-a73a5664face",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                192,
+                15,
+                0,
+                132,
+                1,
+                126,
+                0,
+                0,
+                128,
+                1,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "61cf0bde-e680-4417-9ce5-2ab2fb58b62c",
+            "x": 775.4013605442175,
+            "y": 269.95918367346934,
+            "actors": [
+                {
+                    "spriteSheetId": "6f69d41c-ee04-4e6f-b1d6-62c410b66958",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "a30e9396-6e20-4545-a509-c97e6d283a66",
+                    "x": 2,
+                    "y": 15,
+                    "script": [
+                        {
+                            "id": "155b7574-8232-4437-883a-e63d1bd1a41d",
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "4"
+                            }
+                        },
+                        {
+                            "id": "601e2a39-268f-46e7-9fae-7bf5a85f21f4",
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "bd5ba5e7-49db-4ff2-ab4a-02723944caa0",
+                                "__name": "Scoot riding",
+                                "$variable[0]$": "499",
+                                "__comment": false
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "9bf857f8-f521-4848-b31a-a4365ef71bc0",
+                                        "command": "EVENT_SET_INPUT_SCRIPT",
+                                        "args": {
+                                            "input": "b"
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "16460b31-7a05-496c-be05-64139f7663b6",
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "0",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "67e41cd7-46ff-47c8-8171-2fb43c0d3532",
+                                                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                                                "args": {
+                                                                    "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
+                                                                    "__comment": false
+                                                                },
+                                                                "__type": "event"
+                                                            },
+                                                            {
+                                                                "id": "446120b3-6020-4f17-bd46-8e10aba196fa",
+                                                                "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                                                "args": {
+                                                                    "actorId": "player",
+                                                                    "speed": "1"
+                                                                },
+                                                                "__type": "event"
+                                                            },
+                                                            {
+                                                                "id": "06a61a3a-7da9-433c-9d2b-3024ec5acc4c",
+                                                                "command": "EVENT_SET_FALSE",
+                                                                "args": {
+                                                                    "variable": "0"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "b8405bda-66fb-4912-8714-b01f84e08387",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Speed=2"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__comment": true
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "148cd60c-c928-4fce-a2ae-7b7497d8d8be",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "id": "75c9555e-e5b4-42ce-9e19-2cce75b7d3fc",
+                                                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                                                "args": {
+                                                                    "spriteSheetId": "bcfd1f72-a21a-49ec-874d-c735adff5508"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "a181cd8b-f5f1-4540-9e7b-6c87a48556e6",
+                                                                "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                                                "args": {
+                                                                    "actorId": "player",
+                                                                    "speed": "2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "025711de-300d-4d1a-b707-f146bcab64cf",
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "0"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "e38a2e60-3b31-4673-a051-6834d5cd14e8",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Speed=3"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__comment": true
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "098f6d15-ddae-4f9a-8567-b9f597d604a9",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "id": "7d02578b-a82c-4792-a56e-a83bb18af100",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "dae5c91b-cd5d-48bd-9a37-86d4f52dae6d",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "be08b183-58cb-4f08-acf9-ecf44aee7a77",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "triggers": []
         }
     ],
     "_version": "1.2.0",
@@ -8584,7 +8875,7 @@
                                             "command": "EVENT_PLAYER_SET_SPRITE",
                                             "args": {
                                                 "spriteSheetId": "30703442-ce51-4a82-b296-f6f94595f927",
-                                                "__comment": true
+                                                "__comment": false
                                             },
                                             "__type": "event"
                                         },
@@ -8593,7 +8884,7 @@
                                             "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                             "args": {
                                                 "actorId": "player",
-                                                "speed": "2"
+                                                "speed": "1"
                                             },
                                             "__type": "event"
                                         },
@@ -8602,6 +8893,17 @@
                                             "command": "EVENT_SET_FALSE",
                                             "args": {
                                                 "variable": "0"
+                                            }
+                                        },
+                                        {
+                                            "id": "b8405bda-66fb-4912-8714-b01f84e08387",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Speed=2"
+                                                ],
+                                                "avatarId": "",
+                                                "__comment": true
                                             }
                                         },
                                         {
@@ -8622,7 +8924,7 @@
                                             "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                             "args": {
                                                 "actorId": "player",
-                                                "speed": "3"
+                                                "speed": "2"
                                             }
                                         },
                                         {
@@ -8630,6 +8932,17 @@
                                             "command": "EVENT_SET_TRUE",
                                             "args": {
                                                 "variable": "0"
+                                            }
+                                        },
+                                        {
+                                            "id": "e38a2e60-3b31-4673-a051-6834d5cd14e8",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Speed=3"
+                                                ],
+                                                "avatarId": "",
+                                                "__comment": true
                                             }
                                         },
                                         {
