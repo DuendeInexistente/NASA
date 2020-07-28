@@ -53,15 +53,15 @@
             "fileName": "7 - inside big ball building - lit.tmx",
             "height": 144,
             "width": 160,
-            "x": 328,
+            "x": 376,
             "y": -336
         },
         {
             "fileName": "8 - inside shack.tmx",
             "height": 144,
             "width": 160,
-            "x": 168,
-            "y": -336
+            "x": 88,
+            "y": -296
         },
         {
             "fileName": "9 - farm.tmx",
@@ -69,6 +69,13 @@
             "width": 160,
             "x": 88,
             "y": -96
+        },
+        {
+            "fileName": "7 - inside big ball building.tmx",
+            "height": 144,
+            "width": 160,
+            "x": 216,
+            "y": -336
         }
     ],
     "onlyShowAdjacentMaps": false,

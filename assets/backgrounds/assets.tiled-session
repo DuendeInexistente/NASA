@@ -297,8 +297,8 @@
             "scale": 1,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 80,
-                "y": 99.5
+                "x": 141,
+                "y": 100.5
             }
         },
         "2.tmx": {
@@ -310,11 +310,11 @@
             }
         },
         "3.tmx": {
-            "scale": 0.75,
+            "scale": 3,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 80,
-                "y": 72.66666666666663
+                "x": 199.33333333333331,
+                "y": 105.16666666666669
             }
         },
         "4.tmx": {
@@ -326,51 +326,51 @@
             }
         },
         "5.tmx": {
-            "scale": 0.75,
+            "scale": 1.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": -106.66666666666669,
-                "y": 321.99999999999994
+                "x": 22,
+                "y": 206.99999999999997
             }
         },
         "6 - moving side to side.tmx": {
-            "scale": 3,
-            "selectedLayer": 2,
+            "scale": 2,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 80,
-                "y": 72.16666666666666
+                "x": 251.5,
+                "y": 3.25
             }
         },
         "7 - inside big ball building - lit.tmx": {
             "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 80,
+                "x": -52.66666666666666,
                 "y": 72.66666666666663
             }
         },
         "7 - inside big ball building.tmx": {
-            "scale": 3,
+            "scale": 1,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 80.16666666666666,
-                "y": 72.16666666666666
+                "x": 107.5,
+                "y": 136.5
             }
         },
         "8 - inside shack.tmx": {
             "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 80,
-                "y": 72.66666666666663
+                "x": 295.33333333333337,
+                "y": 116.66666666666663
             }
         },
         "9 - farm.tmx": {
             "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 80,
-                "y": 72.66666666666663
+                "x": 226,
+                "y": 95.33333333333326
             }
         },
         "NASA.tsx": {
