@@ -2610,6 +2610,14 @@
             "triggers": [],
             "script": [
                 {
+                    "id": "9ac2583c-2205-45f6-ae1b-1369233616b7",
+                    "command": "EVENT_DEFINE_LABEL",
+                    "args": {
+                        "label": "Begining"
+                    },
+                    "__type": "event"
+                },
+                {
                     "id": "8567ee5c-69e0-4a8a-99c4-d7bc74181e4d",
                     "command": "EVENT_IF_SAVED_DATA",
                     "args": {
@@ -3143,7 +3151,7 @@
             "height": 18,
             "collisions": [],
             "id": "7429cf77-003c-4f41-b2cd-b44307203222",
-            "x": 385.12024309145517,
+            "x": 385.69661196753583,
             "y": 30,
             "actors": [],
             "triggers": [],
@@ -8572,7 +8580,7 @@
             "imageWidth": 160,
             "imageHeight": 200,
             "filename": "1.png",
-            "_v": 1595917994747
+            "_v": 1595918442528
         },
         {
             "id": "9558e390-b73b-4b1c-a1a0-889c78dadc46",
@@ -8592,7 +8600,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "3.png",
-            "_v": 1595917994747
+            "_v": 1595918432415
         },
         {
             "id": "bbb44f6f-5bf7-48e9-a47d-1ae9a78d23b6",
@@ -8612,7 +8620,7 @@
             "imageWidth": 160,
             "imageHeight": 200,
             "filename": "5.png",
-            "_v": 1595917994748
+            "_v": 1595918452247
         },
         {
             "id": "55a6531e-5a18-412a-96b5-a73a5664face",
@@ -8712,7 +8720,7 @@
             "imageWidth": 400,
             "imageHeight": 900,
             "filename": "tileset.png",
-            "_v": 1595917994768
+            "_v": 1595918381334
         }
     ],
     "spriteSheets": [

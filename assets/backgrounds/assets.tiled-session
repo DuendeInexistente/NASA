@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "5.tmx",
+    "activeFile": "8 - inside shack.tmx",
     "automapping.whileDrawing": false,
     "expandedProjectPaths": [
         "."
@@ -326,11 +326,11 @@
             }
         },
         "5.tmx": {
-            "scale": 1.5,
+            "scale": 0.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 22,
-                "y": 206.99999999999997
+                "x": 27,
+                "y": -51
             }
         },
         "6 - moving side to side.tmx": {
@@ -358,11 +358,11 @@
             }
         },
         "8 - inside shack.tmx": {
-            "scale": 0.75,
+            "scale": 3,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 295.33333333333337,
-                "y": 116.66666666666663
+                "x": 83.5,
+                "y": 69.49999999999999
             }
         },
         "9 - farm.tmx": {
@@ -417,7 +417,8 @@
         "6 - moving side to side.tmx",
         "7 - inside big ball building - lit.tmx",
         "8 - inside shack.tmx",
-        "9 - farm.tmx"
+        "9 - farm.tmx",
+        "7 - inside big ball building.tmx"
     ],
     "project": "assets.tiled-project",
     "recentFiles": [
@@ -425,11 +426,12 @@
         "2.tmx",
         "3.tmx",
         "4.tmx",
+        "5.tmx",
+        "6 - moving side to side.tmx",
+        "7 - inside big ball building - lit.tmx",
+        "7 - inside big ball building.tmx",
         "9 - farm.tmx",
         "8 - inside shack.tmx",
-        "7 - inside big ball building - lit.tmx",
-        "6 - moving side to side.tmx",
-        "5.tmx",
         "world.tmx"
     ],
     "resizeMap.removeObjects": false,
